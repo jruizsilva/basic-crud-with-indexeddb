@@ -1,0 +1,86 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+body {
+	background-color: #efefef;
+	font-family: sans-serif;
+}
+.header {
+	padding: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.header__h1 {
+	font-size: 24px;
+	text-align: center;
+}
+.formulario {
+	margin: auto;
+	max-width: 400px;
+	padding: 16px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ccc;
+}
+.campo {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
+}
+.label {
+	font-size: 18px;
+	margin-bottom: 2px;
+}
+.input {
+	padding: 8px;
+	outline: none;
+	border: none;
+	font-size: 16px;
+}
+.contenedor-btn {
+	margin-top: 16px;
+	display: flex;
+	gap: 16px;
+}
+.button {
+	height: 48px;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: 1px solid #222;
+	border-radius: 3px;
+	font-size: 16px;
+	color: #222;
+	font-weight: bold;
+}
+.button:hover {
+	cursor: pointer;
+}
+.main {
+	margin: auto;
+	max-width: 400px;
+}
+.main__table {
+	width: 100%;
+}
+.main__thead {
+	font-size: 18px;
+}
+.main__tr {
+	display: flex;
+	padding: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.main__tr :first-child {
+	flex-basis: 70%;
+	text-align: left;
+}
+.main__tr :nth-child(2) {
+	flex-basis: 30%;
+	text-align: center;
+}

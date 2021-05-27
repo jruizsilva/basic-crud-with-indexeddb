@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CRUD IndexedDB</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__h1">CRUD con IndexedDB</h1>
+		</header>
+		<form action="#" class="formulario" id="formulario">
+			<div class="campo">
+				<label for="" class="label">Producto</label>
+				<input type="text" class="input" id="producto" />
+			</div>
+			<div class="campo">
+				<label for="" class="label">Precio</label>
+				<input type="number" class="input" id="precio" />
+			</div>
+			<div class="contenedor-btn">
+				<button type="button" class="button" id="btnAgregar">Agregar</button>
+				<button type="button" class="button" id="btnEliminar">Eliminar</button>
+			</div>
+		</form>
+		<main class="main">
+			<table class="main__table">
+				<thead class="main__thead">
+					<tr class="main__tr">
+						<th>Lista de Productos</th>
+						<th>Precio</th>
+					</tr>
+				</thead>
+				<tbody id="contenedorProductos"></tbody>
+			</table>
+		</main>
+		<template id="template-producto">
+			<tr class="main__tr">
+				<td id="producto">Coca cola</td>
+				<td id="precio">$15</td>
+			</tr>
+		</template>
+		<script src="js/app.js"></script>
+	</body>
+</html>
